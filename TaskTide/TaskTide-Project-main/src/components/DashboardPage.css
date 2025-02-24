@@ -1,0 +1,134 @@
+/* DashboardPage.css */
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2f2f2f;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.sidebar-header h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.task-type-toggle {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.toggle-btn {
+  background-color: #444;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.toggle-btn.active {
+  background-color: #0066cc;
+}
+
+.add-task-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.new-task-input {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.icon-button.add-task-button {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list-item {
+  background-color: #444;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+.task-list-item.active {
+  background-color: #0066cc;
+}
+
+.task-list-item.completed {
+  background-color: #333;
+  text-decoration: line-through;
+}
+
+.remove-button {
+  background-color: transparent;
+  color: red;
+  border: none;
+  cursor: pointer;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+  border-left: 1px solid #ddd;
+}
+
+.task-details {
+  margin-top: 20px;
+}
+
+.empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+  color: #666;
+}
+
+.task-notes {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: #888;
+}
